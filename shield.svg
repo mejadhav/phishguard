@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a6cf7" />
+      <stop offset="100%" stop-color="#3451b2" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" />
+      <feOffset dx="0" dy="10" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main Shield -->
+  <path d="M256 21.52l-200 80v149.44c0 90.52 76.8 175.08 200 239.04 123.2-63.96 200-148.52 200-239.04V101.52l-200-80z" 
+        fill="url(#gradient1)" filter="url(#shadow)" />
+  
+  <!-- Inner Shield -->
+  <path d="M256 51.52l-170 68v131.44c0 75.52 65.28 146.08 170 199.04 104.72-52.96 170-123.52 170-199.04V119.52l-170-68z" 
+        fill="#ffffff" opacity="0.2" />
+  
+  <!-- Check Mark -->
+  <path d="M216 338.4l-90.4-90.4 38.4-38.4 52 52 124.8-124.8 38.4 38.4z" 
+        fill="#ffffff" />
+</svg>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Jadhav PhishGuard - Phishing URL Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>Vedant Jadhav PhishGuard</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Protect Yourself From Phishing Attacks</h2>
+                    <p>PhishGuard uses advanced machine learning to detect malicious URLs and keep you safe online.</p>
+                    <div class="url-checker">
+                        <form id="url-form">
+                            <div class="input-group">
+                                <input type="text" id="url-input" placeholder="Enter a URL to check..." required>
+                                <button type="submit" id="check-button">
+                                    <i class="fas fa-search"></i> Check URL
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="shield.svg" alt="Security Shield">
+                </div>
+            </section>
+
+            <section class="result-section" id="result-section">
+                <div class="result-card" id="result-card">
+                    <div class="result-header">
+                        <h3>Analysis Result</h3>
+                        <span class="close-btn" id="close-result">&times;</span>
+                    </div>
+                    <div class="result-content">
+                        <div class="result-status" id="result-status">
+                            <!-- Status will be inserted here -->
+                        </div>
+                        <div class="url-display" id="url-display">
+                            <!-- URL will be displayed here -->
+                        </div>
+                        <div class="confidence-meter">
+                            <div class="confidence-label">Confidence:</div>
+                            <div class="meter">
+                                <div class="meter-bar" id="confidence-bar"></div>
+                            </div>
+                            <div class="confidence-value" id="confidence-value">0%</div>
+                        </div>
+                        <div class="features-table">
+                            <h4>URL Features</h4>
+                            <table id="features-table">
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Value</th>
+                                        <th>Risk Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Features will be inserted here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features" id="features">
+                <h2>Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Powered by advanced machine learning algorithms to detect even the most sophisticated phishing attempts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Real-time Analysis</h3>
+                        <p>Get instant results with our high-performance URL analysis engine.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Detailed Reports</h3>
+                        <p>View comprehensive reports on why a URL might be dangerous.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Privacy Focused</h3>
+                        <p>We don't store your URLs or personal data, ensuring your privacy.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about-content">
+                    <h2>About PhishGuard</h2>
+                    <p>PhishGuard is a lightweight yet powerful tool designed to help users identify potentially harmful phishing URLs before they become victims of cyber attacks.</p>
+                    <p>Our system uses a combination of rule-based analysis and machine learning techniques to analyze URLs and determine their risk level with high accuracy.</p>
+                    <p>Phishing attacks remain one of the most common cyber threats, with millions of people falling victim each year. By using PhishGuard, you add an extra layer of protection to your online activities.</p>
+                </div>
+                <div class="about-image">
+                    <img src="phishing.svg" alt="Phishing Concept">
+                </div>
+            </section>
+
+            <section class="statistics" id="statistics">
+                <h2>Phishing Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">83%</div>
+                        <div class="stat-description">of organizations experienced phishing attacks in 2021</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$17,700</div>
+                        <div class="stat-description">average loss per phishing attack for small businesses</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">1.5M</div>
+                        <div class="stat-description">new phishing sites created each month</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">88%</div>
+                        <div class="stat-description">of phishing attacks use deceptive domains</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h2>PhishGuard</h2>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#statistics">Statistics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                     <p><i class="fas fa-envelope"></i>jadhavvedant58@gmail.com</p>
+                    <p><i class="fas fa-globe"></i><a href="https://vedantjadhav11.github.io/Portfolio-/" target="_blank">My Portfolio</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PhishGuard. All rights reserved.</p>
+                <p>Created by Vedant Jadhav</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
